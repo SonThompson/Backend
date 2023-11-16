@@ -18,16 +18,16 @@ __Database table connection diagram__
 ![dbdiagram(https://dbdiagram.io/d/6555b72b3be1495787197d63)](https://github.com/SonThompson/Database-Shop/blob/main/Images/ScreenSchemeBD.png)  
   
 __Table Contents__
-
+  
 _Categories(Category)_  
 The table of product categories (types) consists of two columns: a category identifier column and a category name column.  
 _Example table contents:_
 category_id | category_name
 ------------|-----------------------
-1           | Компьютерная техника
-2           | Офис и канцелярия
-3           | Мелкая бытовая техника  
-
+1           | Computer equipment
+2           | Office
+3           | Small household appliances  
+  
 _Manufacturers of goods (Manufacture)_  
 The table contains information about the product manufacturer identifier and its name.  
 _Example table contents:_  
@@ -38,18 +38,18 @@ manufacturer_id | manufacturer_name
 3               | Haier
 4               | Nescafe
 5               | Be quiet
-
-_Products (Product)_
+  
+_Products (Product)_  
 The table contains the product identifier, its name, a link to the supplier identifier (foreign key), and a link to the category identifier (foreign key) to which the product belongs.  
 _Example table contents:_  
 product_id | product_name                        | manufacturer_id | category_id
 -----------|-------------------------------------|-----------------|------------
-1          | Кухонный комбайн KitchenAid 5KSM156 | 71              | 3
-2          | Видеокарта Asus GeForce GT 1030     | 29              | 1
-3          | Ноутбук HP ENVY 13-ad000            | 486             | 1
-4          | Фен Dewal 03-401                    | 124             | 3
-5          | Кофеварка Gastrorag CM-717          | 225             | 3
-
+1          | Food Processor KitchenAid 5KSM156   | 71              | 3
+2          | Vide ocard Asus GeForce GT 1030     | 29              | 1
+3          | Laptop HP ENVY 13-ad000             | 486             | 1
+4          | Fan Dewal 03-401                    | 124             | 3
+5          | Coffee maker Gastrorag CM-717       | 225             | 3
+  
 _Changes in prices for goods (PriceChange)_  
 Product prices are subject to change. To account for changes in prices for goods, the price_change table is used.
 The table contains a link to the product (foreign key), the date the product price changed and the new price. Thus, in order to find 
@@ -68,34 +68,35 @@ The table contains branch identifiers and their names.
 _Example table contents:_  
 store_id | store_name
 ---------|-----------
-1        | Филиал №1
-2        | Филиал №2
-3        | Филиал №3
-4        | Филиал №4
+1        | Branch №1
+2        | Branch №2
+3        | Branch №3
+4        | Branch №4
   
 _Supplies (Delivery)_  
 The table contains the identifiers of the goods delivered, the branch where the goods were delivered, the delivery date and the quantity of goods delivered.  
 _Example table contents:_  
-delivery_id |product_id | store_id | delivery_date | product_count
-------------|-----------|----------|---------------|--------------
-1           |0          | 0        | 1546300800    | 5
-2           |0          | 0        | 1556125138    | 9
-3           |1          | 0        | 1546300800    | 5
-4           |1          | 0        | 1575852670    | 9
-5           |2          | 3        | 1546300800    | 5
-
-_Clients (Customer)_
+delivery_id |product_id | store_id | delivery_date               | product_count
+------------|-----------|----------|-----------------------------|--------------
+1           |0          | 0        | 2023-11-14T15:53:26.757Z    | 5
+2           |0          | 0        | 2018-10-14T25:43:22.621Z    | 9
+3           |1          | 0        | 2023-11-14T05:19:14.701Z    | 5
+4           |1          | 0        | 2023-11-14T16:24:17.532Z    | 9
+5           |2          | 3        | 2023-11-14T49:07:19.421Z    | 5
+  
+_Clients (Customer)_  
 The table contains identifiers and names of clients (buyers).  
 _Example table contents:_  
-customer_id | customer_fname    | customer_lname
-------------|-------------------|---------------
-1           | Митофан Демидович | Дорофеев
-2           | Софрон            | Панов
-3           | Демьян            | Мартынов
-4           | Гостомысл         | Белоусов  
+customer_id | customer_fname      | customer_lname
+------------|---------------------|---------------
+1           | Mitrofan Demidovich | Дорофеев
+2           | Sofron              | Панов
+3           | Demyan              | Мартынов
+4           | Gostomisl           | Белоусов  
+  
 To simplify, the first and last names of the client (buyer) are stored in one column  
-
-_Purchases (Purchase)_
+  
+_Purchases (Purchase)_  
 The purchase table can be represented as a table of invoices for goods purchased as part of one purchase (the purchase is characterized by a unique combination: date, buyer, branch).
 The table contains the purchase ID, the ID of the customer who made the purchase, the ID of the branch where the purchase was made, and the date of purchase.  
 _Example table contents:_  
@@ -106,8 +107,8 @@ purchase_id | customer_id | store_id | purchase_date
 3           | 10          | 1        | 2023-11-14T05:19:14.701Z
 4           | 7           | 2        | 2023-11-14T16:24:17.532Z
 5           | 9           | 3        | 2023-11-14T49:07:19.421Z
-
-_Invoice entry (PurchaseItem)_
+  
+_Invoice entry (PurchaseItem)_  
 The table contains information about goods purchased as part of one purchase (items on the invoice). To simplify the analysis of information about purchases,
 a product price field has been introduced into the table, which is filled in automatically based on the price of the product at the time of purchase.  
 _Example table contents:_  
@@ -118,8 +119,8 @@ purchase_item_id|purchase_id | product_id | product_count | product_price
 3               |2           | 9          | 1             | 4939
 4               |2           | 36         | 1             | 33000
 5               |3           | 41         | 1             | 6356.9
-
-
+  
+  
 __Starting the program__
 When you run the program, you will see the following:  
   
