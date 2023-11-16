@@ -15,7 +15,7 @@ Backend: C#.NET 6.0 + EF Core
 Database: ProstgreSQL
 ```
 __Database table connection diagram__  
-![dbdiagram](https://github.com/SonThompson/Database-Shop/blob/main/Images/DBDiagram.png)  
+![dbdiagram(https://dbdiagram.io/d/6555b72b3be1495787197d63)](https://github.com/SonThompson/Database-Shop/blob/main/Images/ScreenSchemeBD.png)  
   
 __Table Contents__
 
