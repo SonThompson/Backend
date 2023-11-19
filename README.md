@@ -89,10 +89,10 @@ The table contains identifiers and names of clients (buyers).
 _Example table contents:_  
 customer_id | customer_fname      | customer_lname
 ------------|---------------------|---------------
-1           | Mitrofan Demidovich | Дорофеев
-2           | Sofron              | Панов
-3           | Demyan              | Мартынов
-4           | Gostomisl           | Белоусов  
+1           | Mitrofan Demidovich | Dorofeev
+2           | Sofron              | Panov
+3           | Demyan              | Tokarev
+4           | Gostomisl           | Belousov  
   
 To simplify, the first and last names of the client (buyer) are stored in one column  
   
