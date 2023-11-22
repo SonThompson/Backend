@@ -1,0 +1,15 @@
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.csproj.AssemblyReference.cache
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.AssemblyInfoInputs.cache
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.AssemblyInfo.cs
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.csproj.CoreCompileInputs.cache
+C:\Users\SonTi\source\repos\Backend\BackendHelper\bin\Debug\net6.0\BackendHelper.deps.json
+C:\Users\SonTi\source\repos\Backend\BackendHelper\bin\Debug\net6.0\BackendHelper.dll
+C:\Users\SonTi\source\repos\Backend\BackendHelper\bin\Debug\net6.0\BackendHelper.pdb
+C:\Users\SonTi\source\repos\Backend\BackendHelper\bin\Debug\net6.0\BackendEntities.dll
+C:\Users\SonTi\source\repos\Backend\BackendHelper\bin\Debug\net6.0\BackendEntities.pdb
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.csproj.CopyComplete
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.dll
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\refint\BackendHelper.dll
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\BackendHelper.pdb
+C:\Users\SonTi\source\repos\Backend\BackendHelper\obj\Debug\net6.0\ref\BackendHelper.dll

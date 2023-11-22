@@ -1,0 +1,14 @@
+C:\Users\SonTi\source\repos\Backend\BackendEntities\bin\Debug\net6.0\BackendEntities.deps.json
+C:\Users\SonTi\source\repos\Backend\BackendEntities\bin\Debug\net6.0\BackendEntities.runtimeconfig.json
+C:\Users\SonTi\source\repos\Backend\BackendEntities\bin\Debug\net6.0\BackendEntities.dll
+C:\Users\SonTi\source\repos\Backend\BackendEntities\bin\Debug\net6.0\BackendEntities.pdb
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.csproj.AssemblyReference.cache
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.AssemblyInfoInputs.cache
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.AssemblyInfo.cs
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.csproj.CoreCompileInputs.cache
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.dll
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\refint\BackendEntities.dll
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.pdb
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\BackendEntities.genruntimeconfig.cache
+C:\Users\SonTi\source\repos\Backend\BackendEntities\obj\Debug\net6.0\ref\BackendEntities.dll
