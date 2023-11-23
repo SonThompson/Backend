@@ -3,7 +3,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Reflection;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,15 +15,14 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 using BackendHelper.Helpers;
 using BackendHelper.Repositories;
 using BackendHelper.Repositories.IRepos;
 using BackendHelper.Repositories.repos;
-using Microsoft.EntityFrameworkCore;
 using BackendEntities.Entities;
-using System.Text.Json.Serialization;
 using BackendEntities;
-using System.Reflection;
 
 namespace BackendApi
 {
@@ -41,9 +42,26 @@ namespace BackendApi
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
 
-            var serviceProvider = services.BuildServiceProvider();
-            var logger = serviceProvider.GetService<ILogger<Category>>();
+            // create a logger factory
+            var loggerFactory = LoggerFactory.Create(
+                builder => builder.AddConsole().AddDebug().SetMinimumLevel(LogLevel.Debug));
+
+            // create a logger
+            var logger = loggerFactory.CreateLogger<Startup>();
+
+            // logging
+            logger.LogTrace("Trace message");
+            logger.LogDebug("Debug message");
+            logger.LogInformation("Info message");
+            logger.LogWarning("Warning message");
+            logger.LogError("Error message");
+            logger.LogCritical("Critical message");
+
             services.AddSingleton(typeof(ILogger), logger);
+
+            //var serviceProvider = services.BuildServiceProvider();
+            //var logger = serviceProvider.GetService<ILogger<Category>>();
+            //services.AddSingleton(typeof(ILogger), logger);
 
             services.AddAutoMapper(typeof(AutoMapperProfile).GetTypeInfo().Assembly);
 
