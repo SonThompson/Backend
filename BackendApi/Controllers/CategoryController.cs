@@ -1,22 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BackendHelper.Repositories.IRepos;
-using BackendEntities.RequestModels;
+using Backend.DAL.Entities;
+using Backend.DAL.RequestModels.EntityModels;
+using Backend.DAL.RequestModels;
 using Newtonsoft.Json;
-using BackendEntities.RequestModels.EntityModels;
 using AutoMapper;
-using BackendEntities.Entities;
-using BackendHelper.Helpers;
 
-namespace BackendEntities.Controllers
+namespace BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryRepo repository;
-        private readonly ILogger logger;
+        private readonly ILogger<CategoryController> logger;
         private readonly IMapper mapper;
-        public CategoryController(ICategoryRepo repository, ILogger logger, IMapper mapper)
+        public CategoryController(ICategoryRepo repository, ILogger<CategoryController> logger, IMapper mapper)
         {
             this.repository = repository;
             this.logger = logger;
@@ -97,11 +96,12 @@ namespace BackendEntities.Controllers
         /// <param name="category">параметры категории</param>
         /// <returns>Результат</returns>
         [HttpPost("AddNewCategory")]
+        [ProducesResponseType(typeof(Category), 201)]
         public async Task<IActionResult> AddNewCategory(CategoryModel category)
         {
             try
             {
-                var entity = mapper.Map<CategoryModel,Category>(category);
+                var entity = mapper.Map<Category>(category);
                 await repository.Add(entity);
                 await repository.SaveAsync();
 

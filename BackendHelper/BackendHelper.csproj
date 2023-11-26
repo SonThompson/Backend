@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BackendEntities\BackendEntities.csproj" />
+    <ProjectReference Include="..\Backend.DAL\Backend.DAL.csproj" />
   </ItemGroup>
 
 </Project>

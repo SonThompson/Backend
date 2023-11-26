@@ -5,12 +5,16 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendApi", "BackendApi\BackendApi.csproj", "{EE9D8476-BA44-4F09-860C-BA2D3991BD01}"
 	ProjectSection(ProjectDependencies) = postProject
+		{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08} = {3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}
 		{A1E7FE8E-7492-4280-816B-B61C33F54A2B} = {A1E7FE8E-7492-4280-816B-B61C33F54A2B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendEntities", "BackendEntities\BackendEntities.csproj", "{38444A6E-73C5-4A30-A7E0-22FDDD326B01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendHelper", "BackendHelper\BackendHelper.csproj", "{A1E7FE8E-7492-4280-816B-B61C33F54A2B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08} = {3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendHelper", "BackendHelper\BackendHelper.csproj", "{A1E7FE8E-7492-4280-816B-B61C33F54A2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.DAL", "Backend.DAL\Backend.DAL.csproj", "{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,14 +26,14 @@ Global
 		{EE9D8476-BA44-4F09-860C-BA2D3991BD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE9D8476-BA44-4F09-860C-BA2D3991BD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE9D8476-BA44-4F09-860C-BA2D3991BD01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38444A6E-73C5-4A30-A7E0-22FDDD326B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38444A6E-73C5-4A30-A7E0-22FDDD326B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38444A6E-73C5-4A30-A7E0-22FDDD326B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38444A6E-73C5-4A30-A7E0-22FDDD326B01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A1E7FE8E-7492-4280-816B-B61C33F54A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1E7FE8E-7492-4280-816B-B61C33F54A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1E7FE8E-7492-4280-816B-B61C33F54A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1E7FE8E-7492-4280-816B-B61C33F54A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CCA42AB-20BD-48FC-86FA-A0E5D08FBA08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

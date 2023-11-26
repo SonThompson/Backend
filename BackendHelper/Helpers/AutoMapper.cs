@@ -1,10 +1,12 @@
 ﻿
 namespace BackendHelper.Helpers;
 
-using BackendEntities.RequestModels.EntityModels;
-using BackendEntities.Entities;
+using Backend.DAL.RequestModels.EntityModels;
+using Backend.DAL.Entities;
 using AutoMapper;
-
+/// <summary>
+/// Маппер для создания доп. абстракции
+/// </summary>
 public class AutoMapperProfile : Profile
 {
     public AutoMapperProfile()

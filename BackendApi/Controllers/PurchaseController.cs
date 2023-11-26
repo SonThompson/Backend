@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BackendHelper.Repositories.IRepos;
-using BackendEntities.RequestModels;
+using Backend.DAL.RequestModels;
 using Newtonsoft.Json;
-using BackendEntities.RequestModels.EntityModels;
+using Backend.DAL.RequestModels.EntityModels;
 using AutoMapper;
-using BackendEntities.Entities;
+using Backend.DAL.Entities;
 
 namespace BackendEntities.Controllers
 {
